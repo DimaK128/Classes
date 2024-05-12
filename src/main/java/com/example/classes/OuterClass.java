@@ -1,35 +1,34 @@
+package com.example.classes;
+
 public class OuterClass {
 
     // 2.1 Inner class
     public static class InnerClass {
         public void greet() {
-            System.out.println("Inner Class!");
+            System.out.println("This is an Inner Class!");
         }
     }
 
+    // 2.2 Local class
     public void LocalClass() {
-        // 2.2 Local class
         class LocalClass {
             public void printMessage() {
-                System.out.println("Local Class!");
+                System.out.println("This is a Local Class!");
             }
         }
 
-        // Create an instance of the local class
         LocalClass local = new LocalClass();
         local.printMessage();
     }
 
+    // 2.3 Anonymous class
     public void AnonymousClass() {
-        // Anonymous class implementing an interface
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                System.out.println("Anonymous Class!");
+                System.out.println("This is an Anonymous Class!");
             }
         };
-
-        // Using the anonymous class
         runnable.run();
     }
 

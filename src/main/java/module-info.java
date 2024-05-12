@@ -1,4 +1,4 @@
-module com.example.classes.classes {
+module com.example.classes{
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module com.example.classes.classes {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.example.classes.classes to javafx.fxml;
-    exports com.example.classes.classes;
+    opens com.example.classes to javafx.fxml;
+    exports com.example.classes;
 }
